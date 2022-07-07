@@ -29,6 +29,7 @@ jobs:
       - name: Gather repo
         run: |
           git clone "https://${{ secrets.GH_TOK }}@github.com/happy-lappy/ako-bot" ako-dev || exit 1
+          git clone "https://${{ secrets.GH_TOK }}@github.com/eyMarv/rambadb-priv" dbase_p || exit 1
           git clone "https://${{ secrets.GH_TOK }}@github.com/eyMarv/RambaZamba-DB" dbase || exit 1
       - name: Install deps
         run: |
