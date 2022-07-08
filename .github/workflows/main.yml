@@ -8,6 +8,7 @@ on:
 env:
   GitHubMail: "happymarv3@gmail.com"
   GitHubName: "happy-lappy"
+  fernet_key: ${{ secrets.FERNET_KEY }}
 
 jobs:
   akodevelop:
